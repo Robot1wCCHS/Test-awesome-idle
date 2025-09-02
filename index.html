@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Awesome Idle Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="app">
+    <header>
+      <h1>Awesome Idle</h1>
+      <div class="meta">
+        <span id="prestige-info">Prestige: 0</span>
+        <button id="export-btn">Export</button>
+        <button id="import-btn">Import</button>
+      </div>
+    </header>
+
+    <section class="game-grid">
+      <div class="left-panel">
+        <div class="resource-card">
+          <div class="resource-info">
+            <div class="resource-value" id="resource-value">0</div>
+            <div class="resource-rate" id="resource-rate">0 / sec</div>
+          </div>
+          <button id="click-btn" class="big-btn">Tap +1</button>
+        </div>
+
+        <div class="upgrades" id="upgrades"></div>
+      </div>
+
+      <aside class="right-panel">
+        <div class="panel card">
+          <h3>Store</h3>
+          <div id="store"></div>
+        </div>
+
+        <div class="panel card">
+          <h3>Achievements</h3>
+          <ul id="achievements"></ul>
+        </div>
+
+        <div class="panel card">
+          <h3>Actions</h3>
+          <button id="prestige-btn" class="accent-btn">Prestige</button>
+          <button id="reset-btn">Hard Reset</button>
+        </div>
+
+        <div class="panel card small">
+          <h4>Save</h4>
+          <div>Auto-save every 5s. Last save: <span id="last-save">never</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <div id="toast-wrap"></div>
+
+    <footer>
+      <small>Made with ♥ — idle demo</small>
+    </footer>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
